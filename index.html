@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvećara</title>
+    <style>
+        .naslov {
+            color: purple;
+            font-size: 30px;
+        }
+        .boja {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <p class="naslov">Odaberite cveće:</p>
+            <input type="number" name="" id="cenaRuze" placeholder="Cena po cvetu je 150 din."> <b>Ruže</b> <br>
+            <input type="number" name="" id="cenaLjiljana" placeholder="Cena po cvetu je 120 din."> <b>Ljiljani</b> <br>
+            <input type="number" name="" id="cenaGerbera" placeholder="Cena po cvetu je 70 din."> <b>Gerberi</b> <br>
+        </div>
+
+        <div>
+            <p class="naslov">Dodatni pokloni:</p>
+            <input type="checkbox" name="pokloni" value="bombonjera" id="bombonjera"> <b>Bombonjera</b> <br>
+            <input type="checkbox" name="pokloni" value="cokolada" id="cokolada"> <b>Čokolada</b> <br>
+            <input type="checkbox" name="pokloni" value="sampanjac" id="sampanjac"> <b>Šampanjac</b> <br>
+        </div>
+
+        <div>
+            <p class="naslov">Plaćanje:</p>
+            <input type="radio" name="placanje" value="kes" id="kes" checked> <b>Keš</b> <br>
+            <input type="radio" name="placanje" value="kartica" id="kartica"> <b>Kartica</b> <br>
+        </div>
+
+        <div>
+            <button id="izracunaj" value="racunaj">Izračunaj</button>
+            <button type="reset" value="resetuj" id="resetuj">Resetuj</button>
+        </div>
+    </form>
+    <p class="naslov">Vaša porudžbina:</p>
+    
+    <div>
+    
+        <p id="ruza" class="boja"></p>
+    
+    
+        <p id="ljiljan" class="boja"></p>
+    
+    
+        <p id="gerber" class="boja"></p>
+    
+    
+        <p id="plusBombonjera" class="boja"></p>
+    
+    
+        <p id="plusCokolada" class="boja"></p>
+    
+    
+        <p id="plusSampanjac" class="boja"></p>
+    
+    
+        <p id="cenaBezPopusta" class="boja"></p>
+    
+    
+        <p id="cenaSaPopustom" class="naslov"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
